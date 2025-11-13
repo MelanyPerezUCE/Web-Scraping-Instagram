@@ -344,9 +344,7 @@ def Guardado_Benford():
 if __name__ == "__main__":
     driver = crear_navegador()
     try:
-        # Intentar restaurar sesión desde cookies
         if not cargar_cookies(driver):
-            # Si no hay cookies, hacer login normal y guardar
             login(driver)
 
         if abrir_seguidores(driver):
